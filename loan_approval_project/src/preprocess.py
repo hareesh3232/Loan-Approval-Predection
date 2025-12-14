@@ -9,9 +9,10 @@ import joblib
 import os
 
 # Paths
-DATA_PATH = os.path.join('loan_approval_project', 'data', 'loan_prediction.csv')
-PROCESSED_DATA_DIR = os.path.join('loan_approval_project', 'data')
-MODELS_DIR = os.path.join('loan_approval_project', 'models')
+# Paths relative to project root
+DATA_PATH = os.path.join('data', 'loan_prediction.csv')
+PROCESSED_DATA_DIR = os.path.join('data')
+MODELS_DIR = os.path.join('models')
 
 # Create dirs if not exist
 os.makedirs(PROCESSED_DATA_DIR, exist_ok=True)

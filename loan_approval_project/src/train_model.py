@@ -14,8 +14,10 @@ except ImportError:
     xgb_available = False
     print("XGBoost not installed, skipping.")
 
-DATA_DIR = os.path.join('loan_approval_project', 'data')
-MODELS_DIR = os.path.join('loan_approval_project', 'models')
+# Define paths relative to the project root
+# Assuming this script is run from the project root (where src/ is)
+DATA_DIR = os.path.join('data')
+MODELS_DIR = os.path.join('models')
 
 def train_models():
     print("Loading prepared data...")
